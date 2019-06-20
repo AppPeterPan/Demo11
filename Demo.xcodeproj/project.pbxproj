@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9B8C104622BB7BBA00872883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8C104422BB7BBA00872883 /* Main.storyboard */; };
 		9B8C104822BB7BBB00872883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8C104722BB7BBB00872883 /* Assets.xcassets */; };
 		9B8C104B22BB7BBB00872883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8C104922BB7BBB00872883 /* LaunchScreen.storyboard */; };
+		9BAE1A1322BBDFA70093C006 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAE1A1222BBDFA70093C006 /* Hero */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAE1A1322BBDFA70093C006 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Demo;
+			packageProductDependencies = (
+				9BAE1A1222BBDFA70093C006 /* Hero */,
+			);
 			productName = Demo;
 			productReference = 9B8C103B22BB7BBA00872883 /* Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9B8C103222BB7BBA00872883;
+			packageReferences = (
+				9BAE1A1122BBDFA70093C006 /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 9B8C103C22BB7BBA00872883 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9BAE1A1122BBDFA70093C006 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BAE1A1222BBDFA70093C006 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BAE1A1122BBDFA70093C006 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B8C103322BB7BBA00872883 /* Project object */;
 }
